@@ -132,3 +132,8 @@ a[href="/guild-discovery"],
 	border-top: 1px solid #f26262;
 	height: 18px;
 }
+
+/* remove notification mask */
+.svg-1X37T1 rect {
+    display: none;
+}
