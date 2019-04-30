@@ -1,8 +1,16 @@
-
+/* stupid pages I don't care about in the DM area */
 a[href="/activity"], a[href="/library"], a[href="/store"],
-a[href="/guild-discovery"],
+/* guild discovery botton on the server list` */
 .scroller-2TZvBN > .listItem-2P_4kh:last-child,
+/* stupid @ symbol by username in DMs */
+.chat-3bRxxu .children-19S4PO .iconWrapper-2OrFZ1,
+/* I forget */
 .buttons-205you button[tabindex="2"]  {display: none;}
+
+/* space name in DMs */
+.chat-3bRxxu .children-19S4PO {
+	padding-left: 8px;
+}
 
 /* server add icon color */
 .scroller-2TZvBN .listItem-2P_4kh .circleIconButton-jET_ig {
