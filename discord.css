@@ -15,12 +15,12 @@
 
 /* server add icon color */
 .scroller-2TZvBN .listItem-2P_4kh .circleIconButton-jET_ig {
-    background: #202225;
-    border: 1px dashed #535559;
-    color: #535559;
-    -webkit-transition:border-color .25s ease,color .25s ease;
-    border-radius:50%;
-    transition:border-color .25s ease,color .25s ease;
+	background: #202225;
+	border: 1px dashed #535559;
+	color: #535559;
+	-webkit-transition:border-color .25s ease,color .25s ease;
+	border-radius:50%;
+	transition:border-color .25s ease,color .25s ease;
 }
 
 .scroller-2TZvBN .listItem-2P_4kh .circleIconButton-jET_ig.selected-ugP_am {
@@ -30,12 +30,19 @@
 
 /* read channel text color */
 .theme-dark .name-3_Dsmg {
-    color: #757575;
+	color: #757575;
 }
 
 /* unread channel text color */
 .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg {
 	color: #dddddd;
+}
+
+/* friends list name un-bold */
+.friendsTable-133bsv .friendsRow-2yicud .discordTag-1Hozyw .username-1r0gCl {
+	font-weight: 500;
+	font-size: 16px;
+	color: hsla(0,0%,100%,.6);
 }
 
 /* put font-size back to how it was (Sep 19th, 2019) */
@@ -60,7 +67,13 @@
 	opacity: 1;
 }
 
+/* lower code area font size back to how it was */
+.markup-2BOw-j code, .markup-2BOw-j code.inline {
+	font-size: 12.75px;
+}
+
 /* various icon fixes - https://github.com/CompletelyUnbelievable/BDAddons/blob/master/Themes/BringBackOldIcons/BringBackOldIcons.theme.css */
+
 #app-mount .toolbar-1t6TWx .iconWrapper-2OrFZ1{
 	margin:0 6px;
 }
@@ -69,6 +82,29 @@
 	right:5px;
 	top:2px;
 }
+
+/* put the reaction button and 3 dot overflow menu back how it was */
+svg[name="OverflowMenu"] > path, svg[name="Nova_AddReaction"] > path {
+	display: none !important;
+}
+
+svg[name="OverflowMenu"], svg[name="Nova_AddReaction"] {
+	opacity: 0.3;
+}
+
+svg[name="OverflowMenu"]:hover, svg[name="Nova_AddReaction"]:hover,
+.popout-open svg[name="OverflowMenu"], .popout-open svg[name="Nova_AddReaction"] {
+	opacity: 1 !important;
+}
+
+svg[name="Nova_AddReaction"] {
+	background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ic_reactions_grey_16px'%3E%3Cg id='Group-2'%3E%3Cg id='0:0:0:0'%3E%3Crect id='Rectangle-5' x='0' y='0' width='16' height='16'%3E%3C/rect%3E%3Cg id='emoticon' transform='translate(1.333333, 1.333333)'%3E%3C/g%3E%3Cpath d='M14.6332705,7.33333333 C14.6554304,7.55389388 14.6666667,7.77636769 14.6666667,8 C14.6666667,11.6818983 11.6818983,14.6666667 8,14.6666667 C6.23189007,14.6666667 4.53619732,13.9642877 3.28595479,12.7140452 C2.03571227,11.4638027 1.33333333,9.76810993 1.33333333,8 C1.33333333,4.33333333 4.31333333,1.33333333 8,1.33333333 L8,1.33333333 C8.22363231,1.33333333 8.44610612,1.3445696 8.66666667,1.36672949 L8.66666667,2.70847693 C8.44668912,2.68076722 8.22407146,2.66666667 8,2.66666667 C5.05448133,2.66666667 2.66666667,5.05448133 2.66666667,8 C2.66666667,10.9455187 5.05448133,13.3333333 8,13.3333333 C10.9455187,13.3333333 13.3333333,10.9455187 13.3333333,8 C13.3333333,7.77592854 13.3192328,7.55331088 13.2915231,7.33333333 L14.6332705,7.33333333 Z M8,11.6666667 C9.55333333,11.6666667 10.8666667,10.6933333 11.4066667,9.33333333 L4.59333333,9.33333333 C5.12666667,10.6933333 6.44666667,11.6666667 8,11.6666667 Z M10.3333333,7.33333333 C10.8856181,7.33333333 11.3333333,6.88561808 11.3333333,6.33333333 C11.3333333,5.78104858 10.8856181,5.33333333 10.3333333,5.33333333 C9.78104858,5.33333333 9.33333333,5.78104858 9.33333333,6.33333333 C9.33333333,6.88561808 9.78104858,7.33333333 10.3333333,7.33333333 L10.3333333,7.33333333 Z M5.66666667,7.33333333 C6.21895142,7.33333333 6.66666667,6.88561808 6.66666667,6.33333333 C6.66666667,5.78104858 6.21895142,5.33333333 5.66666667,5.33333333 C5.11438192,5.33333333 4.66666667,5.78104858 4.66666667,6.33333333 C4.66666667,6.88561808 5.11438192,7.33333333 5.66666667,7.33333333 Z' id='Combined-Shape' fill='%2399AAB5'%3E%3C/path%3E%3C/g%3E%3Cg id='Group-15' transform='translate(10.666667, 0.000000)' fill='%2399AAB5'%3E%3Cpolygon id='Path' points='3.33333333 2 3.33333333 0 2 0 2 2 0 2 0 3.33333333 2 3.33333333 2 5.33333333 3.33333333 5.33333333 3.33333333 3.33333333 5.33333333 3.33333333 5.33333333 2'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+svg[name="OverflowMenu"] {
+	background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ic_overflow_vertical_grey_16px'%3E%3Cg id='Group-22' transform='translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) '%3E%3Crect id='Rectangle-8' x='0' y='0' width='16' height='16'%3E%3C/rect%3E%3Cg id='dots-horizontal-(1)' transform='translate(2.666667, 6.666667)' fill='%2399AAB5'%3E%3Cpath d='M8,1.33333333 C8,0.596953667 8.59695367,0 9.33333333,0 C10.069713,0 10.6666667,0.596953667 10.6666667,1.33333333 C10.6666667,2.069713 10.069713,2.66666667 9.33333333,2.66666667 C8.59695367,2.66666667 8,2.069713 8,1.33333333 L8,1.33333333 Z M4,1.33333333 C4,0.596953667 4.59695367,0 5.33333333,0 C6.069713,0 6.66666667,0.596953667 6.66666667,1.33333333 C6.66666667,2.069713 6.069713,2.66666667 5.33333333,2.66666667 C4.59695367,2.66666667 4,2.069713 4,1.33333333 L4,1.33333333 Z M0,1.33333333 C0,0.596953667 0.596953667,0 1.33333333,0 C2.069713,0 2.66666667,0.596953667 2.66666667,1.33333333 C2.66666667,2.069713 2.069713,2.66666667 1.33333333,2.66666667 C0.596953667,2.66666667 0,2.069713 0,1.33333333 L0,1.33333333 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* end reaction area */
 
 .container-1YxwTf .icon-2Po-VO[style='background-image: url("/assets/5da4cdab01d4d89c593c48c62ae0d937.svg");'],.container-1YxwTf .icon-2Po-VO[style='background-image: url("/assets/d80d1fdc43a3c42134a31a39581160ac.svg");']{
 	margin:-13px 0 0 -4px;
@@ -104,7 +140,7 @@
 
 /* channel settings icon color */
 .actionIcon-2Hi9ZG {
-    color: #7a7d82;
+	color: #7a7d82;
 }
 
 /* notification icons */
@@ -120,5 +156,5 @@
 
 /* remove notification mask */
 .svg-1X37T1 rect {
-    display: none;
+	display: none;
 }
