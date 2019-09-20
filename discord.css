@@ -1,3 +1,7 @@
+textarea {
+	--text-normal: hsla(0,0%,100%,.7) !important;
+}
+
 /* stupid pages I don't care about in the DM area */
 /* you can turn these off in appearance settings now */
 /* a[href="/activity"], a[href="/library"], a[href="/store"],*/
@@ -33,6 +37,11 @@
 	color: #757575;
 }
 
+/* dark background when hovering channels or DMs */
+.channel-2QD9_O:hover:not(.selected-aXhQR6) .layout-2DM8Md, .containerDefault-1ZnADq:hover .content-3at_AU {
+    background: #272727 !important;
+}
+
 /* unread channel text color */
 .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg {
 	color: #dddddd;
@@ -46,7 +55,7 @@
 }
 
 /* put font-size back to how it was (Sep 19th, 2019) */
-.markup-2BOw-j, .name-uJV0GL, .textArea-2Spzkt {
+.markup-2BOw-j, .sidebar-2K8pFh .name-uJV0GL, .textArea-2Spzkt {
 	font-size: 15px;
 }
 
@@ -54,8 +63,12 @@
  * hey discord can you stop randomly making things bold
  * my eyes dislike you
  * thanks */
-.base-1x0h_U, .name-3YKhmS, .title-eS5yk3 {
+.base-1x0h_U, .name-3YKhmS {
 	font-weight: 500;
+}
+
+.title-eS5yk3 {
+	font-weight: 400;
 }
 
 /* they made the buttons in the text entry area bright for some reason... */
@@ -141,6 +154,11 @@ svg[name="OverflowMenu"] {
 /* channel settings icon color */
 .actionIcon-2Hi9ZG {
 	color: #7a7d82;
+}
+
+/* emotes clip into each other */
+.markup-2BOw-j .emoji {
+	margin-top: .2em !important;
 }
 
 /* notification icons */
