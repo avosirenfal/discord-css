@@ -2,6 +2,11 @@ textarea {
 	--text-normal: hsla(0,0%,100%,.7) !important;
 }
 
+* {
+	--header-primary: #ececec !important;
+	--interactive-active: #efefef !important;
+}
+
 /* stupid pages I don't care about in the DM area */
 /* you can turn these off in appearance settings now */
 /* a[href="/activity"], a[href="/library"], a[href="/store"],*/
@@ -9,8 +14,9 @@ textarea {
 .scroller-2TZvBN > .listItem-2P_4kh:last-child,
 /* stupid @ symbol by username in DMs */
 .chat-3bRxxu .children-19S4PO .iconWrapper-2OrFZ1,
+
 /* I forget */
-.buttons-205you button[tabindex="2"]  {display: none;}
+.buttons-205you button[aria-label="Send a gift"], .buttons-205you button[aria-label="Open GIF picker"]  {display: none;}
 
 /* space name in DMs */
 .chat-3bRxxu .children-19S4PO {
@@ -42,6 +48,18 @@ textarea {
     background: #272727 !important;
 }
 
+/* friends list DM header */
+.header-zu8eWb
+	font-weight: 500;
+	color: #fff;
+	opacity: 0.3;
+}
+
+/* make sure channel name still has its white color */
+.modeSelected-1zApJ_ .name-3_Dsmg, .modeSelected-1zApJ_:hover .name-3_Dsmg {
+	color: var(--interactive-active) !important;
+}
+
 /* unread channel text color */
 .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-dark .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeConnected-2IEL4z:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_ .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeSelected-1zApJ_:hover .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA .name-3_Dsmg, .theme-light .wrapper-1ucjTd.modeUnread-1zpFdA:hover .name-3_Dsmg {
 	color: #dddddd;
@@ -59,6 +77,11 @@ textarea {
 	font-size: 15px;
 }
 
+/* friends text above DM */
+a[href="/channels/@me"] .name-uJV0GL {
+	color: #7a7e86;
+}
+
 /* lower the font-weight of channel titles back to what it was
  * hey discord can you stop randomly making things bold
  * my eyes dislike you
@@ -72,11 +95,11 @@ textarea {
 }
 
 /* they made the buttons in the text entry area bright for some reason... */
-.channelTextArea-1LDbYG svg, .channelTextArea-1LDbYG .sprite-2iCowe {
+.channelTextArea-1LDbYG button svg, .channelTextArea-1LDbYG button .sprite-2iCowe {
 	opacity: .3;
 }
 
-.channelTextArea-1LDbYG svg:hover, .channelTextArea-1LDbYG .sprite-2iCowe:hover {
+.channelTextArea-1LDbYG button svg:hover, .channelTextArea-1LDbYG button .sprite-2iCowe:hover {
 	opacity: 1;
 }
 
