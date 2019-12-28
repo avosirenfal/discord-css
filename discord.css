@@ -15,7 +15,6 @@ textarea {
 /* stupid @ symbol by username in DMs */
 .chat-3bRxxu .children-19S4PO .iconWrapper-2OrFZ1,
 
-/* I forget */
 .buttons-205you button[aria-label="Send a gift"], .buttons-205you button[aria-label="Open GIF picker"]  {display: none;}
 
 /* space name in DMs */
@@ -31,6 +30,11 @@ textarea {
 	-webkit-transition:border-color .25s ease,color .25s ease;
 	border-radius:50%;
 	transition:border-color .25s ease,color .25s ease;
+}
+
+/* hide stupid invite friends icon */
+.privateChannelRecipientsInviteButtonIcon-cXLJ7f {
+	display: none;
 }
 
 .scroller-2TZvBN .listItem-2P_4kh .circleIconButton-jET_ig.selected-ugP_am {
@@ -95,17 +99,42 @@ a[href="/channels/@me"] .name-uJV0GL {
 }
 
 /* they made the buttons in the text entry area bright for some reason... */
-.channelTextArea-1LDbYG button svg, .channelTextArea-1LDbYG button .sprite-2iCowe {
+.channelTextArea-rNsIhG button svg, .channelTextArea-rNsIhG button .sprite-2iCowe {
 	opacity: .3;
 }
 
-.channelTextArea-1LDbYG button svg:hover, .channelTextArea-1LDbYG button .sprite-2iCowe:hover {
+.channelTextArea-rNsIhG .attachButton-2WznTc:hover svg, .channelTextArea-rNsIhG button .sprite-2iCowe:hover {
 	opacity: 1;
 }
 
 /* lower code area font size back to how it was */
 .markup-2BOw-j code, .markup-2BOw-j code.inline {
 	font-size: 12.75px;
+}
+
+/* revert some of the text formatting in the edit box */
+.codeBlockSyntax-CNkRUg, .syntaxAfter-3XEjdd, .syntaxBefore-lQw8oT, .fakeLink-11RWCQ {
+	color: var(--text-normal);
+}
+
+.italics-2_n0Ch {
+	font-style: normal;
+}
+
+.strikethrough-27p46q {
+	text-decoration: none;
+}
+
+.bold-6OKylk {
+	font-weight: 400;
+}
+
+.before_em-31Fifz {
+	margin-right: 0;
+}
+
+.after_em-1GSh9a {
+	margin-left: 0;
 }
 
 /* various icon fixes - https://github.com/CompletelyUnbelievable/BDAddons/blob/master/Themes/BringBackOldIcons/BringBackOldIcons.theme.css */
