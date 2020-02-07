@@ -224,11 +224,6 @@ a.channel-2QD9_O[href="/store"] {
 	display: none;
 }
 
-/* hide the emote popup when mousing over messages */
-.message-2qnXI6 > .buttonContainer-DHceWr {
-	display: none;
-}
-
 /* add the line separator between messages back */
 .groupStart-23k01U {
 	border-top: 1px solid rgba(255,255,255,0.06);
@@ -242,7 +237,7 @@ a.channel-2QD9_O[href="/store"] {
 
 /* restore the old unread message in-line indicator */
 .isUnread-3Ef-o9 {
-    margin-top: 10px !important;
+	margin: 20px 0;
 }
 
 .isUnread-3Ef-o9 > .unreadPill-2HyYtt svg[name="UnreadCap"] {
@@ -275,4 +270,31 @@ a.channel-2QD9_O[href="/store"] {
 /* decrease the eyebleed of usernames on friends list a bit */
 .username-31C1TQ {
 	font-weight: 500;
+}
+
+/* hide the emote buttons when mousing over messages */
+.buttonContainer-DHceWr .emojiButton-jE9tXC, .buttonContainer-DHceWr .emojiSeparator-10VgEJ {
+	display: none;
+}
+
+/* move the reaction and options buttons back down */
+.buttonContainer-DHceWr .buttons-cl5qTG {
+	padding: 25px 14px 0 32px;
+}
+
+/* remove the box around the buttons */
+.buttonContainer-DHceWr .wrapper-2aW0bm {
+	background: transparent;
+	box-shadow: none;
+	border: none;
+}
+
+/* make the colors subdued again */
+.buttonContainer-DHceWr .button-1ZiXG9 {
+	color: #4a4d53;
+}
+
+.button-1ZiXG9:hover, .button-1ZiXG9.selected-LCBEAU {
+	color: var(--interactive-hover);
+	background: none;
 }
