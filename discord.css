@@ -253,7 +253,7 @@ a.channel-2QD9_O[href="/store"] {
 
 /* restore the old unread message in-line indicator */
 .isUnread-3Ef-o9 {
-	margin: 20px 0;
+	margin: 20px 15px;
 }
 
 .isUnread-3Ef-o9 > .unreadPill-2HyYtt svg[name="UnreadCap"] {
