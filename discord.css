@@ -5,6 +5,8 @@ textarea {
 * {
 	--header-primary: #ececec !important;
 	--interactive-active: #efefef !important;
+	/* remove mouseover highlight color on messages */
+	--background-message-hover: transparent !important;
 }
 
 /* stupid pages I don't care about in the DM area */
@@ -15,7 +17,7 @@ textarea {
 /* stupid @ symbol by username in DMs */
 .chat-3bRxxu .children-19S4PO .iconWrapper-2OrFZ1,
 
-.buttons-205you button[aria-label="Send a gift"], .buttons-205you button[aria-label="Open GIF picker"]  {display: none;}
+.buttons-3JBrkn button[aria-label="Send a gift"], .buttons-3JBrkn button[aria-label="Open GIF picker"]  {display: none;}
 
 /* space name in DMs */
 .chat-3bRxxu .children-19S4PO {
@@ -49,7 +51,7 @@ textarea {
 
 /* dark background when hovering channels or DMs */
 .channel-2QD9_O:hover:not(.selected-aXhQR6) .layout-2DM8Md, .containerDefault-1ZnADq:hover .content-3at_AU {
-    background: #272727 !important;
+	background: #272727 !important;
 }
 
 /* friends list DM header */
@@ -69,21 +71,9 @@ textarea {
 	color: #dddddd;
 }
 
-/* friends list name un-bold */
-.friendsTable-133bsv .friendsRow-2yicud .discordTag-1Hozyw .username-1r0gCl {
-	font-weight: 500;
-	font-size: 16px;
-	color: hsla(0,0%,100%,.6);
-}
-
 /* put font-size back to how it was (Sep 19th, 2019) */
 .markup-2BOw-j, .sidebar-2K8pFh .name-uJV0GL, .textArea-2Spzkt {
 	font-size: 15px;
-}
-
-/* friends text above DM */
-a[href="/channels/@me"] .name-uJV0GL {
-	color: #7a7e86;
 }
 
 /* lower the font-weight of channel titles back to what it was
@@ -113,27 +103,27 @@ a[href="/channels/@me"] .name-uJV0GL {
 }
 
 /* revert some of the text formatting in the edit box */
-.codeBlockSyntax-CNkRUg, .syntaxAfter-3XEjdd, .syntaxBefore-lQw8oT, .fakeLink-11RWCQ {
+.syntaxAfter-hcA4AH, .syntaxBefore-1YQ9lW, .fakeLink-26oLcc {
 	color: var(--text-normal);
 }
 
-.italics-2_n0Ch {
+.italics-1CB0-L {
 	font-style: normal;
 }
 
-.strikethrough-27p46q {
+.strikethrough-37TnTg {
 	text-decoration: none;
 }
 
-.bold-6OKylk {
+.bold-36dRGB {
 	font-weight: 400;
 }
 
-.before_em-31Fifz {
+.before_em-9aA_NQ {
 	margin-right: 0;
 }
 
-.after_em-1GSh9a {
+.after_em-U9Eby7 {
 	margin-left: 0;
 }
 
@@ -227,4 +217,62 @@ svg[name="OverflowMenu"] {
 /* remove notification mask */
 .svg-1X37T1 rect {
 	display: none;
+}
+
+/* hide the Nitro link in the friends list */
+a.channel-2QD9_O[href="/store"] {
+	display: none;
+}
+
+/* hide the emote popup when mousing over messages */
+.message-2qnXI6 > .buttonContainer-DHceWr {
+	display: none;
+}
+
+/* add the line separator between messages back */
+.groupStart-23k01U {
+	border-top: 1px solid rgba(255,255,255,0.06);
+	padding: 0 !important;
+	margin: 0 !important;
+	/* padding under the line separator */
+	padding-top: 20px !important;
+	/* padding above the line separator */
+	margin-top: 16px !important;
+}
+
+/* restore the old unread message in-line indicator */
+.isUnread-3Ef-o9 {
+    margin-top: 10px !important;
+}
+
+.isUnread-3Ef-o9 > .unreadPill-2HyYtt svg[name="UnreadCap"] {
+	display: none;
+}
+
+.isUnread-3Ef-o9:after {
+	color: #f04747;
+	font-weight: 600;
+	text-transform: uppercase;
+	content: "New Messages";
+	background: var(--background-primary);
+	padding: 0 8px;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+.isUnread-3Ef-o9 > .unreadPill-2HyYtt {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: transparent;
+	color: transparent;
+}
+
+.isUnread-3Ef-o9 > .unreadPill-2HyYtt:after {
+	border-bottom: 1px solid rgba(240,71,71,.7);
+}
+
+/* decrease the eyebleed of usernames on friends list a bit */
+.username-31C1TQ {
+	font-weight: 500;
 }
