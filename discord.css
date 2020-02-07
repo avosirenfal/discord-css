@@ -336,3 +336,9 @@ a.channel-2QD9_O[href="/store"] {
 .messages-3amgkR .divider-3_HH5L {
 	margin-bottom: 20px;
 }
+
+/* reduce message line height */
+.container-3FojY8 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
