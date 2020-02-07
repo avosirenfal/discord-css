@@ -241,6 +241,13 @@ a.channel-2QD9_O[href="/store"] {
 	padding-bottom: 18px !important;
 }
 
+/* hide line separators when there's already one above it */
+.messages-3amgkR .divider-3_HH5L + .message-2qnXI6 {
+	border: none;
+	margin-top: 0;
+	padding-top: 0 !important;
+}
+
 /* restore the old unread message in-line indicator */
 .isUnread-3Ef-o9 {
 	margin: 20px 0;
@@ -284,8 +291,8 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* move the reaction and options buttons back down */
-.buttonContainer-DHceWr .buttons-cl5qTG {
-	padding: 25px 14px 0 32px;
+.groupStart-23k01U .buttonContainer-DHceWr .buttons-cl5qTG {
+	padding: 35px 14px 0 32px;
 }
 
 /* remove the box around the buttons */
@@ -293,6 +300,11 @@ a.channel-2QD9_O[href="/store"] {
 	background: transparent;
 	box-shadow: none;
 	border: none;
+}
+
+/* rotate the options button back to how it was before */
+.buttonContainer-DHceWr svg[name="OverflowMenuHorizontal"] {
+	transform: rotate(90deg);
 }
 
 /* make the colors subdued again */
