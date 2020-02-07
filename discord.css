@@ -249,10 +249,11 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* hide line separators when there's already one above it */
-.messages-3amgkR .divider-3_HH5L + .message-2qnXI6 {
+.messages-3amgkR .divider-3_HH5L + .message-2qnXI6:before {
 	border: none;
-	margin-top: 0;
-	padding-top: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: none;
 }
 
 /* restore the old unread message in-line indicator */
