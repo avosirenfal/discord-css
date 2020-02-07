@@ -339,3 +339,8 @@ a.channel-2QD9_O[href="/store"] {
 .container-3FojY8 {
 	min-height: 1.0rem;
 }
+
+/* add padding to media embeds */
+.container-1ov-mD {
+	padding-top: 6px;
+}
