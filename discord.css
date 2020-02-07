@@ -237,6 +237,11 @@ a.channel-2QD9_O[href="/store"] {
 	margin-top: 16px !important;
 }
 
+/* remove the spacing on messages since we do that with hr separators now */
+.group-spacing-16 .groupStart-23k01U {
+	margin-top: 0;
+}
+
 /* add the last line separator at the bottom of the messages window */
 .messages-3amgkR .message-2qnXI6:last-child {
 	border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -324,4 +329,13 @@ a.channel-2QD9_O[href="/store"] {
 /* hide hover timestamps, I don't care about them */
 .timestampVisibleOnHover-2bQeI4 {
 	display: none;
+}
+
+/* revert line height increase */
+.markup-2BOw-j {
+	line-height: 1.2rem;
+}
+
+.container-3FojY8 {
+	min-height: 1.0rem;
 }
