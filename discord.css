@@ -225,7 +225,9 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* add the line separator between messages back */
-.groupStart-23k01U {
+.groupStart-23k01U:before {
+	display: block;
+	content: "";
 	border-top: 1px solid rgba(255,255,255,0.06);
 	padding: 0 !important;
 	margin: 0 !important;
@@ -291,15 +293,17 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* move the reaction and options buttons back down */
+.buttonContainer-DHceWr .buttons-cl5qTG {
+	top: 0;
+}
+
 .groupStart-23k01U .buttonContainer-DHceWr .buttons-cl5qTG {
-	padding: 35px 14px 0 32px;
+	top: 35px; /* line separator margin height */
 }
 
 /* remove the box around the buttons */
 .buttonContainer-DHceWr .wrapper-2aW0bm {
-	background: transparent;
 	box-shadow: none;
-	border: none;
 }
 
 /* rotate the options button back to how it was before */
