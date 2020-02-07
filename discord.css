@@ -71,11 +71,6 @@ textarea {
 	color: #dddddd;
 }
 
-/* put font-size back to how it was (Sep 19th, 2019) */
-.markup-2BOw-j, .sidebar-2K8pFh .name-uJV0GL, .textArea-2Spzkt {
-	font-size: 15px;
-}
-
 /* lower the font-weight of channel titles back to what it was
  * hey discord can you stop randomly making things bold
  * my eyes dislike you
@@ -99,7 +94,7 @@ textarea {
 
 /* lower code area font size back to how it was */
 .markup-2BOw-j code, .markup-2BOw-j code.inline {
-	font-size: 12.75px;
+	font-size: 0.85em;
 }
 
 /* revert some of the text formatting in the edit box */
@@ -273,7 +268,7 @@ a.channel-2QD9_O[href="/store"] {
 	background: var(--background-primary);
 	padding: 0 8px;
 	line-height: 22px;
-	font-size: 14px;
+	font-size: 0.93em;
 }
 
 .isUnread-3Ef-o9 > .unreadPill-2HyYtt {
@@ -330,15 +325,6 @@ a.channel-2QD9_O[href="/store"] {
 /* hide hover timestamps, I don't care about them */
 .timestampVisibleOnHover-2bQeI4 {
 	display: none;
-}
-
-/* revert line height increase */
-.markup-2BOw-j {
-	line-height: 1.2rem;
-}
-
-.container-3FojY8 {
-	min-height: 1.0rem;
 }
 
 /* add padding to media embeds */
