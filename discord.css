@@ -92,11 +92,6 @@ textarea {
 	opacity: 1;
 }
 
-/* lower code area font size back to how it was */
-.markup-2BOw-j code, .markup-2BOw-j code.inline {
-	font-size: 0.85em;
-}
-
 /* revert some of the text formatting in the edit box */
 .syntaxAfter-hcA4AH, .syntaxBefore-1YQ9lW, .fakeLink-26oLcc {
 	color: var(--text-normal);
