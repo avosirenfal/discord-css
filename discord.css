@@ -221,15 +221,29 @@ a.channel-2QD9_O[href="/store"] {
 	border-top: 1px solid rgba(255,255,255,0.06);
 	padding: 0 !important;
 	margin: 0 !important;
-	/* padding under the line separator */
-	padding-top: 20px !important;
 	/* padding above the line separator */
 	margin-top: 16px !important;
+	/* padding under the line separator */
+	margin-bottom: 20px !important;
+	/* for unread indicators, etc */
+	position: relative;
+	background: none;
+	width: auto;
 }
 
 /* remove the spacing on messages since we do that with hr separators now */
-.group-spacing-16 .groupStart-23k01U {
-	margin-top: 0;
+.groupStart-23k01U {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important
+}
+
+/* make the unread color apply only to the message text and not the separators */
+.mentioned-xhSam7 {
+	background: none !important;
+}
+
+.mentioned-xhSam7 .container-2LR0t2 {
+	background: var(--background-mentioned)
 }
 
 /* add the last line separator at the bottom of the messages window */
@@ -290,7 +304,7 @@ a.channel-2QD9_O[href="/store"] {
 
 /* move the reaction and options buttons back down */
 .buttonContainer-DHceWr .buttons-cl5qTG {
-	top: 0;
+	top: -8px;
 }
 
 .groupStart-23k01U .buttonContainer-DHceWr .buttons-cl5qTG {
