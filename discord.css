@@ -92,31 +92,6 @@ textarea {
 	opacity: 1;
 }
 
-/* revert some of the text formatting in the edit box */
-.syntaxAfter-hcA4AH, .syntaxBefore-1YQ9lW, .fakeLink-26oLcc {
-	color: var(--text-normal);
-}
-
-.italics-1CB0-L {
-	font-style: normal;
-}
-
-.strikethrough-37TnTg {
-	text-decoration: none;
-}
-
-.bold-36dRGB {
-	font-weight: 400;
-}
-
-.before_em-9aA_NQ {
-	margin-right: 0;
-}
-
-.after_em-U9Eby7 {
-	margin-left: 0;
-}
-
 /* various icon fixes - https://github.com/CompletelyUnbelievable/BDAddons/blob/master/Themes/BringBackOldIcons/BringBackOldIcons.theme.css */
 
 #app-mount .toolbar-1t6TWx .iconWrapper-2OrFZ1{
@@ -350,4 +325,21 @@ a.channel-2QD9_O[href="/store"] {
 .container-3FojY8 {
 	padding-top: 0;
 	padding-bottom: 0;
+}
+
+/* avatars... */
+.contents-2mQqc9 {
+	position: relative !important;
+}
+
+/* wrapper can't have padding because it will pad line separators */
+.wrapper-2a6GCs {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* move that padding to its children instead, but not on the reaction/message setting buttons */
+.wrapper-2a6GCs > div:not(.buttonContainer-DHceWr) {
+	padding-left: 4.5rem;
+	padding-right: 48px;
 }
