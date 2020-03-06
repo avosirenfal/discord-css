@@ -190,7 +190,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* add the line separator between messages back */
-.groupStart-23k01U:before {
+.messages-3amgkR > .groupStart-23k01U:before {
 	display: block;
 	content: "";
 	border-top: 1px solid rgba(255,255,255,0.06);
@@ -207,7 +207,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* remove the spacing on messages since we do that with hr separators now */
-.groupStart-23k01U {
+.messages-3amgkR > .groupStart-23k01U {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important
 }
@@ -222,7 +222,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* add the last line separator at the bottom of the messages window */
-.messages-3amgkR .message-2qnXI6:last-child {
+.messages-3amgkR > .message-2qnXI6:last-child {
 	border-bottom: 1px solid rgba(255,255,255,0.06);
 	padding-bottom: 18px !important;
 }
@@ -240,7 +240,7 @@ a.channel-2QD9_O[href="/store"] {
 	margin: 20px 15px !important;
 }
 
-.isUnread-3Ef-o9 > .unreadPill-2HyYtt svg[name="UnreadCap"] {
+.isUnread-3Ef-o9 svg.unreadPillCap-3_K2q2 {
 	display: none;
 }
 
@@ -282,7 +282,7 @@ a.channel-2QD9_O[href="/store"] {
 	top: -8px;
 }
 
-.groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG {
+.messages-3amgkR > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG {
 	top: 35px; /* line separator margin height */
 }
 
