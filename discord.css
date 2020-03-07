@@ -282,6 +282,11 @@ a.channel-2QD9_O[href="/store"] {
 	top: -8px;
 }
 
+.messages-3amgkR > .groupStart-23k01U .buttons-cl5qTG {
+	/* adjust for the added height from line separators */
+	top: 34px;
+}
+
 .messages-3amgkR > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG {
 	top: 35px; /* line separator margin height */
 }
