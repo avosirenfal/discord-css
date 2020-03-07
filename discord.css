@@ -297,7 +297,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* rotate the options button back to how it was before */
-.buttonContainer-DHceWr svg[name="OverflowMenuHorizontal"] {
+.buttonContainer-DHceWr svg.icon-3Gkjwa {
 	transform: rotate(90deg);
 }
 
