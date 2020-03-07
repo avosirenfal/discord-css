@@ -282,13 +282,15 @@ a.channel-2QD9_O[href="/store"] {
 	top: -8px;
 }
 
+.messages-3amgkR > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG,
 .messages-3amgkR > .groupStart-23k01U .buttons-cl5qTG {
 	/* adjust for the added height from line separators */
-	top: 34px;
+	top: 35px;
 }
 
-.messages-3amgkR > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG {
-	top: 35px; /* line separator margin height */
+/* messages after dividers don't have a line separator */
+.messages-3amgkR .divider-3_HH5L + .message-2qnXI6 .buttonContainer-DHceWr .buttons-cl5qTG  {
+	top: 0;
 }
 
 /* remove the box around the buttons */
