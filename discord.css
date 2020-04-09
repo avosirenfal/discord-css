@@ -189,8 +189,12 @@ a.channel-2QD9_O[href="/store"] {
 	display: none;
 }
 
-/* add the line separator between messages back */
-.messages-3amgkR > div .groupStart-23k01U:before {
+/*
+add the line separator between messages back
+this won't select highlighted-from-search messages because
+they're nested in two groupStart divs
+*/
+.messages-3amgkR > div > .groupStart-23k01U:before {
 	display: block;
 	content: "";
 	border-top: 1px solid rgba(255,255,255,0.06);
@@ -207,7 +211,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* remove the spacing on messages since we do that with hr separators now */
-.messages-3amgkR > div .groupStart-23k01U {
+.messages-3amgkR > div > .groupStart-23k01U {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important
 }
@@ -222,7 +226,7 @@ a.channel-2QD9_O[href="/store"] {
 }
 
 /* add the last line separator at the bottom of the messages window */
-.messages-3amgkR > div .message-2qnXI6:last-child {
+.messages-3amgkR > div > .message-2qnXI6:last-child {
 	border-bottom: 1px solid rgba(255,255,255,0.06);
 	padding-bottom: 18px !important;
 }
@@ -282,15 +286,18 @@ a.channel-2QD9_O[href="/store"] {
 	top: -8px;
 }
 
-.messages-3amgkR > div .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG,
-.messages-3amgkR > div .groupStart-23k01U .buttons-cl5qTG {
+.messages-3amgkR > div > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG,
+.messages-3amgkR > div > .groupStart-23k01U .buttons-cl5qTG {
 	/* adjust for the added height from line separators */
 	top: 35px;
 }
 
+/* highlighted search messages have different position: relative parent? */
+.messages-3amgkR > div > .da-backgroundFlash > div .buttonContainer-DHceWr .buttons-cl5qTG,
+.messages-3amgkR > div > .backgroundFlash-24qWLN > div .buttonContainer-DHceWr .buttons-cl5qTG,
 /* messages after dividers don't have a line separator */
 .messages-3amgkR > div .divider-JfaTT5 + .message-2qnXI6 .buttonContainer-DHceWr .buttons-cl5qTG  {
-	top: 0;
+	top: 0 !important;
 }
 
 /* remove the box around the buttons */
