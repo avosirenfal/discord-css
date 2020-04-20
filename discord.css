@@ -226,9 +226,12 @@ they're nested in two groupStart divs
 }
 
 /* add the last line separator at the bottom of the messages window */
-.messages-3amgkR > div > .message-2qnXI6:last-child {
-	border-bottom: 1px solid rgba(255,255,255,0.06);
-	padding-bottom: 18px !important;
+.messages-3amgkR > div > .da-scrollerSpacer:last-child,
+.messages-3amgkR > div > .scrollerSpacer-1Rp0XE:last-child {
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin: 16px 0 20px 0;
 }
 
 /* hide line separators when there's already one above it */
