@@ -360,3 +360,7 @@ they're nested in two groupStart divs
 	padding-left: 4.5rem;
 	padding-right: 48px;
 }
+
+div[aria-label="Explore Public Servers"] {
+	display: none;
+}
