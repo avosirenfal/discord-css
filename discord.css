@@ -194,16 +194,16 @@ add the line separator between messages back
 this won't select highlighted-from-search messages because
 they're nested in two groupStart divs
 */
-.messages-3amgkR > div > .groupStart-23k01U:before {
+.chatContent-a9vAAp .groupStart-23k01U:before {
 	display: block;
 	content: "";
 	border-top: 1px solid rgba(255,255,255,0.06);
 	padding: 0 !important;
 	margin: 0 !important;
 	/* padding above the line separator */
-	margin-top: 16px !important;
+	margin-top: 14px !important;
 	/* padding under the line separator */
-	margin-bottom: 20px !important;
+	margin-bottom: 18px !important;
 	/* for unread indicators, etc */
 	position: relative;
 	background: none;
@@ -211,7 +211,7 @@ they're nested in two groupStart divs
 }
 
 /* remove the spacing on messages since we do that with hr separators now */
-.messages-3amgkR > div > .groupStart-23k01U {
+.chatContent-a9vAAp .groupStart-23k01U {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important
 }
@@ -226,8 +226,8 @@ they're nested in two groupStart divs
 }
 
 /* add the last line separator at the bottom of the messages window */
-.messages-3amgkR > div > .da-scrollerSpacer:last-child,
-.messages-3amgkR > div > .scrollerSpacer-1Rp0XE:last-child {
+.chatContent-a9vAAp .da-scrollerSpacer:last-child,
+.chatContent-a9vAAp .scrollerSpacer-1Rp0XE:last-child {
     height: 1px;
     width: 100%;
     border-top: 1px solid rgba(255,255,255,0.06);
@@ -289,8 +289,8 @@ they're nested in two groupStart divs
 	top: -8px;
 }
 
-.messages-3amgkR > div > .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG,
-.messages-3amgkR > div > .groupStart-23k01U .buttons-cl5qTG {
+.chatContent-a9vAAp .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG,
+.chatContent-a9vAAp .groupStart-23k01U .buttons-cl5qTG {
 	/* adjust for the added height from line separators */
 	top: 35px;
 }
