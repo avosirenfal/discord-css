@@ -235,7 +235,7 @@ they're nested in two groupStart divs
 }
 
 /* hide line separators when there's already one above it */
-.messages-3amgkR .divider-JfaTT5 + .message-2qnXI6:before {
+.chatContent-a9vAAp .divider-JfaTT5 + .message-2qnXI6:before {
 	border: none;
 	margin: 0 !important;
 	padding: 0 !important;
