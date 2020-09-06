@@ -295,6 +295,13 @@ they're nested in two groupStart divs
 	top: 35px;
 }
 
+.chatContent-a9vAAp .groupStart-23k01U:not(.systemMessage-1I9LCe) .buttonContainer-DHceWr .buttons-cl5qTG.isHeader-2dII4U {
+	top: 0 !important;
+}
+
+/* messages after date dividers are moved down too far, I forget how I fixed this before... */
+isHeader-2dII4U da-isHeader
+
 /* highlighted search messages have different position: relative parent? */
 .messages-3amgkR > div > .da-backgroundFlash > div .buttonContainer-DHceWr .buttons-cl5qTG,
 .messages-3amgkR > div > .backgroundFlash-24qWLN > div .buttonContainer-DHceWr .buttons-cl5qTG,
