@@ -25,13 +25,12 @@ textarea {
 }
 
 /* server add icon color */
-.scroller-2TZvBN .listItem-2P_4kh .circleIconButton-jET_ig {
-	background: #202225;
-	border: 1px dashed #535559;
+.circleIconButton-1QV--U {
+	background: transparent;
 	color: #535559;
-	-webkit-transition:border-color .25s ease,color .25s ease;
-	border-radius:50%;
-	transition:border-color .25s ease,color .25s ease;
+	border: 1px dashed #535559;
+	border-radius: 50%;
+	transition: border-color .25s ease,color .25s ease;
 }
 
 /* hide stupid invite friends icon */
