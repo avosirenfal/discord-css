@@ -363,3 +363,19 @@ they're nested in two groupStart divs
 div[aria-label="Explore Public Servers"] {
 	display: none;
 }
+
+/* change mention colors back to how they were */
+.theme-dark .wrapper-3WhCwL {
+	color: #7289da;
+	background: rgba(114,137,218,.1);
+}
+
+.theme-dark .interactive:hover {
+	color: #fff;
+	background-color: #7289da;
+}
+
+/* fix ugly new font */
+[data-popout-root].newBrand, html.newBrand {
+	--font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
