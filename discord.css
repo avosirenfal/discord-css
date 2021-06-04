@@ -12,11 +12,12 @@ textarea {
 /* stupid pages I don't care about in the DM area */
 /* you can turn these off in appearance settings now */
 /* a[href="/activity"], a[href="/library"], a[href="/store"],*/
+/* stage discovery button in friends list */
+a[href="/discovery"],
 /* guild discovery botton on the server list` */
 .scroller-2TZvBN > .listItem-2P_4kh:last-child,
 /* stupid @ symbol by username in DMs */
 .chat-3bRxxu .children-19S4PO .iconWrapper-2OrFZ1,
-
 .buttons-3JBrkn button[aria-label="Send a gift"], .buttons-3JBrkn button[aria-label="Open GIF picker"]  {display: none;}
 
 /* space name in DMs */
