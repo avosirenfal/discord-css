@@ -380,3 +380,8 @@ div[aria-label="Explore Public Servers"] {
 [data-popout-root].newBrand, html.newBrand {
 	--font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* hide thread buttons */
+#channel-attach-THREAD, div[aria-label="Create Thread"] {
+	display: none;
+}
