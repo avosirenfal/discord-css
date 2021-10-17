@@ -26,7 +26,7 @@ a[href="/discovery"],
 }
 
 /* server add icon color */
-.circleIconButton-1QV--U {
+.circleIconButton-1XqULR {
 	background: transparent;
 	color: #535559;
 	border: 1px dashed #535559;
@@ -380,6 +380,7 @@ div[aria-label="Explore Public Servers"] {
 [data-popout-root].newBrand, html.newBrand {
 	--font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 /* hide thread buttons */
 #channel-attach-THREAD, div[aria-label="Create Thread"] {
