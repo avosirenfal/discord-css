@@ -386,3 +386,8 @@ div[aria-label="Explore Public Servers"] {
 #channel-attach-THREAD, div[aria-label="Create Thread"] {
 	display: none;
 }
+
+/* hide welcome button */
+.welcomeCTAButtonOuter-2VwxSF {
+	display: none;
+}
