@@ -26,7 +26,7 @@ a[href="/discovery"],
 }
 
 /* server add icon color */
-.circleIconButton-1XqULR {
+div[data-list-item-id="guildsnav___create-join-button"] {
 	background: transparent;
 	color: #535559;
 	border: 1px dashed #535559;
