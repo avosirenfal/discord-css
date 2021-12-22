@@ -391,3 +391,25 @@ div[aria-label="Explore Public Servers"] {
 .welcomeCTAButtonOuter-2VwxSF {
 	display: none;
 }
+
+/* hide empty divs that create space for server banners
+hide server banners
+targets <div style="height: 84px;"></div> */
+.content-3YMskv > div:empty:first-child, .animatedContainer-1NSq4T {
+	display: none;
+}
+
+/* hide server boost goal */
+div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
+	display: none;
+}
+
+/** start: show black HR under header still when banner is hidden **/
+.bannerVisible-2ZE_qG .header-2V-4Sw {
+	filter: none;
+}
+
+.hasBanner-2SrLR3 .header-2V-4Sw, .hasBanner-2SrLR3 .header-2V-4Sw:hover {
+	box-shadow: var(--elevation-low);
+}
+/** end banner HR **/
