@@ -392,15 +392,15 @@ div[aria-label="Explore Public Servers"] {
 	display: none;
 }
 
-/* hide empty divs that create space for server banners
-hide server banners
-targets <div style="height: 84px;"></div> */
-.content-3YMskv > div:empty:first-child, .animatedContainer-1NSq4T {
+/* Hide server boost in the top left */
+.container-3fNISf {
 	display: none;
 }
 
-/* hide server boost goal */
-div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
+/* hide empty divs that create space for server banners
+hide server banners
+targets <div style="height: 84px;"></div> */
+.sidebar-2K8pFh .content-3YMskv > div:empty:first-child, .animatedContainer-1NSq4T {
 	display: none;
 }
 
@@ -413,3 +413,8 @@ div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 	box-shadow: var(--elevation-low);
 }
 /** end banner HR **/
+
+/* hide server boost goal */
+div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
+	display: none;
+}
