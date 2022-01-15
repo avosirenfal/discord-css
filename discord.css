@@ -78,6 +78,10 @@ div[id="channels"] > div > div:empty:first-child,
 div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 	display: none;
 }
+
+div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
+	display: none;
+}
 /** end hide server boosts */
 
 
