@@ -81,6 +81,7 @@ div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 /** end hide server boosts */
 
 
+
 /** restore line separators between messages */
 ol[data-list-id="chat-messages"] .groupStart-3Mlgv1 {
 	border-top: 1px solid rgba(255,255,255,0.06);
@@ -191,4 +192,30 @@ div[aria-label="Message Actions"] div[aria-label="Create Thread"] {
 /** rotate "more" button */
 div[aria-label="Message Actions"] div[aria-label="More"] {
 	transform: rotate(90deg);
+}
+
+/* tip in the upload dropdown... */
+#channel-attach-upload-file .tipSubtext-qn0l_- {
+	display: none;
+}
+
+/** notification icon */
+.lowerBadge-3WTshO {
+	background-color: #f04747 !important;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+	width: 16px;
+	border-top: 1px solid #f26262;
+	height: 18px;
+}
+
+/** remove notification icon mask */
+use[href="#a0d0abd5-c512-40bb-8dae-ec66f08c797a-lower_badge_masks"] {
+	display: none;
+}
+
+/** hide mouseover timestamps */
+ol[data-list-id="chat-messages"] div[aria-roledescription="Message"]:not(.groupStart-3Mlgv1) time {
+	display: none;
 }
