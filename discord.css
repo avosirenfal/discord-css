@@ -57,23 +57,7 @@ div[aria-label="Explore Public Servers"] {
 
 
 
-/* hide empty divs that create space for server banners
-hide server banners
-targets <div style="height: 84px;"></div> */
-div[id="channels"] > div > div:empty:first-child,
-.animatedContainer-2laTjx {
-	display: none;
-}
 
-/** start: show black HR under header still when banner is hidden **/
-.bannerVisible-Vkyg1I > header {
-	filter: none !important;
-}
-
-.hasBanner-2IrYih header, .hasBanner-2IrYih header:hover {
-	box-shadow: var(--elevation-low) !important;
-}
-/** end banner HR **/
 
 div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 	display: none;
@@ -203,8 +187,8 @@ div[aria-label="Message Actions"] div[aria-label="More"] {
 	display: none;
 }
 
-/** notification icon */
-.lowerBadge-3WTshO {
+/** notification icon: DMs and channels */
+.lowerBadge-3WTshO, .mentionsBadge-2ckrKL {
 	background-color: #f04747 !important;
 	border: 2px solid transparent;
 	border-radius: 3px;
