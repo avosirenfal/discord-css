@@ -36,7 +36,7 @@ section[aria-label="Channel header"] > *:first-child {
 }
 
 /* hide the Nitro link in the friends list */
-a.channel-1Shao0[href="/store"] {
+a[href="/store"] {
 	display: none;
 }
 
@@ -50,11 +50,10 @@ div[data-list-item-id="guildsnav___create-join-button"] {
 }
 
 /* remove "explore public servers" button on the left */
-div[aria-label="Explore Public Servers"] {
+div[aria-label="Explore Public Servers"],
+ul[data-list-id="guildsnav"] .scroller-3X7KbA > .listItem-3SmSlK {
 	display: none;
 }
-
-
 
 
 
@@ -205,5 +204,10 @@ use[href="#a0d0abd5-c512-40bb-8dae-ec66f08c797a-lower_badge_masks"] {
 
 /** hide mouseover timestamps */
 ol[data-list-id="chat-messages"] div[aria-roledescription="Message"]:not(.groupStart-3Mlgv1) time {
+	display: none;
+}
+
+/** remove create thread button in bottom left text entry pupup */
+#channel-attach-THREAD, #channel-attach-upload-text-as-file {
 	display: none;
 }
