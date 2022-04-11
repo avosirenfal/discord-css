@@ -1,5 +1,5 @@
-textarea {
-	--text-normal: hsla(0,0%,100%,.7) !important;
+textarea::placeholder {
+	color: #72767d; /* hsla(0,0%,100%,.7) !important; */
 }
 
 * {
