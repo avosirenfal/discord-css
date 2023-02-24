@@ -1,5 +1,5 @@
 textarea::placeholder {
-	color: #72767d !important; /* hsla(0,0%,100%,.7) !important; */
+	color: #72767d; /* hsla(0,0%,100%,.7) !important; */
 }
 
 * {
@@ -7,6 +7,14 @@ textarea::placeholder {
 	--header-primary: #ececec !important;
 	/* remove mouseover highlight color on messages */
 	--background-message-hover: transparent !important;
+	/* make muted text actually muted... */
+	--text-muted: #72767d !important;
+	// font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	/* revert background color changes */
+	--background-primary: #36393f;
+	--channeltextarea-background: #40444b;
+	--background-secondary: #2f3136;
+	--background-secondary-alt: #292b2f;
 }
 
 /* stupid @ symbol by username in DMs */
@@ -37,6 +45,11 @@ section[aria-label="Channel header"] > *:first-child {
 
 /* hide the Nitro link in the friends list */
 a[href="/store"] {
+	display: none;
+}
+
+/* hide snowsgiving */
+a[href="//discord.com/snowsgiving"] {
 	display: none;
 }
 
