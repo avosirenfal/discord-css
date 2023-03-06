@@ -199,8 +199,8 @@ div[aria-label="Message Actions"] div[aria-label="More"] {
 	display: none;
 }
 
-/** notification icon: DMs and channels */
-.lowerBadge-3WTshO, .mentionsBadge-2ckrKL {
+/** notification/mention icon: DMs and channels */
+.lowerBadge-3j0ZAg, .mentionsBadge-3H1BKJ {
 	background-color: #f04747 !important;
 	border: 2px solid transparent;
 	border-radius: 3px;
