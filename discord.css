@@ -18,12 +18,15 @@ textarea::placeholder {
 }
 
 /* stupid @ symbol by username in DMs */
+/* update: I think they removed it themselves? long overdue */
+/*
 section[aria-label="Channel header"] > *:first-child .iconWrapper-2awDjA {
 	display: none;
 }
 section[aria-label="Channel header"] > *:first-child {
 	padding-left:10px;
 }
+*/
 
 /* bottom left name is distracting */
 .title-338goq{
@@ -31,15 +34,15 @@ section[aria-label="Channel header"] > *:first-child {
 }
 
 /* icons in the send message textbox */
-.buttons-uaqb-5 button[aria-label="Send a gift"],
-.buttons-uaqb-5 button[aria-label="Open GIF picker"]  {display: none;}
+.buttons_ce5b56 button[aria-label="Send a gift"],
+.buttons_ce5b56 button[aria-label="Open GIF picker"]  {display: none;}
 
 /* they made the buttons in the send message textbox bright for some reason... */
-.channelTextArea-1FufC0 button {
+.channelTextArea__2e60f button {
 	opacity: .3;
 }
 
-.channelTextArea-1FufC0 button:hover {
+.channelTextArea__2e60f button:hover {
 	opacity: 1.0;
 }
 
@@ -50,6 +53,11 @@ a[href="/store"] {
 
 /* hide snowsgiving */
 a[href="//discord.com/snowsgiving"] {
+	display: none;
+}
+
+/* hide server discovery */
+div[aria-label="Explore Discoverable Servers"] {
 	display: none;
 }
 
@@ -83,11 +91,11 @@ div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
 
 
 /** restore line separators between messages */
-ol[data-list-id="chat-messages"] .groupStart-3Mlgv1 {
+ol[data-list-id="chat-messages"] .groupStart__56db5 {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] .groupStart-3Mlgv1:before {
+ol[data-list-id="chat-messages"] .groupStart__56db5:before {
 	display: block;
 	content: "";
 	
@@ -105,7 +113,7 @@ ol[data-list-id="chat-messages"] .groupStart-3Mlgv1:before {
 
 /* discord CSS antipattern `messageListItem` containers prevent selecting
 and removing double borders without JS or CSS4's :has */
-/** .divider-2rZFJK + li:has(> .groupStart-3Mlgv1) {
+/** .divider-2rZFJK + li:has(> .groupStart__56db5) {
 	border-top: none;
 } */
 /** end line separators */
@@ -216,7 +224,7 @@ use[href="#a0d0abd5-c512-40bb-8dae-ec66f08c797a-lower_badge_masks"] {
 }
 
 /** hide mouseover timestamps */
-ol[data-list-id="chat-messages"] div[aria-roledescription="Message"]:not(.groupStart-3Mlgv1) time {
+ol[data-list-id="chat-messages"] div[aria-roledescription="Message"]:not(.groupStart__56db5) time {
 	display: none;
 }
 
