@@ -162,7 +162,7 @@ and removing double borders without JS or CSS4's :has */
 /** end unread */
 
 /* change mention colors back to how they were */
-.theme-dark .wrapper-1ZcZW- {
+.mention {
 	color: #7289da;
 	background: rgba(114,137,218,.1);
 }
@@ -208,7 +208,7 @@ div[aria-label="Message Actions"] div[aria-label="More"] {
 }
 
 /** notification/mention icon: DMs and channels */
-.lowerBadge-3j0ZAg, .mentionsBadge-3H1BKJ {
+.lowerBadge__669e7, .mentionsBadge-3H1BKJ {
 	background-color: #f04747 !important;
 	border: 2px solid transparent;
 	border-radius: 3px;
