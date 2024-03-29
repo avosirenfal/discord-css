@@ -17,37 +17,29 @@ textarea::placeholder {
 	--background-secondary-alt: #292b2f;
 }
 
-/* stupid @ symbol by username in DMs */
-/* update: I think they removed it themselves? long overdue */
-/*
-section[aria-label="Channel header"] > *:first-child .iconWrapper-2awDjA {
-	display: none;
-}
-section[aria-label="Channel header"] > *:first-child {
-	padding-left:10px;
-}
-*/
-
 /* bottom left name is distracting */
-.title-338goq{
+.title__4a7a9 {
 	font-weight: 500;
 }
 
 /* icons in the send message textbox */
-.buttons_ce5b56 button[aria-label="Send a gift"],
-.buttons_ce5b56 button[aria-label="Open GIF picker"]  {display: none;}
+.buttons__7ecff button[aria-label="Send a gift"],
+.buttons__7ecff button[aria-label="Open GIF picker"]  {display: none;}
 
 /* they made the buttons in the send message textbox bright for some reason... */
-.channelTextArea__2e60f button {
+.channelTextArea__648e5 button {
 	opacity: .3;
 }
 
-.channelTextArea__2e60f button:hover {
+.channelTextArea__648e5 button:hover {
 	opacity: 1.0;
 }
 
 /* hide the Nitro link in the friends list */
 a[href="/store"] {
+	display: none;
+}
+a[href="/shop"] {
 	display: none;
 }
 
@@ -70,15 +62,6 @@ div[data-list-item-id="guildsnav___create-join-button"] {
 	transition: border-color .25s ease,color .25s ease;
 }
 
-/* remove "explore public servers" button on the left */
-div[aria-label="Explore Public Servers"],
-ul[data-list-id="guildsnav"] .scroller-3X7KbA > .listItem-3SmSlK {
-	display: none;
-}
-
-
-
-
 div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 	display: none;
 }
@@ -86,16 +69,14 @@ div[aria-label="Buy Boosts to help unlock the Communities plan!"] {
 div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
 	display: none;
 }
-/** end hide server boosts */
-
 
 
 /** restore line separators between messages */
-ol[data-list-id="chat-messages"] .groupStart__56db5 {
+ol[data-list-id="chat-messages"] .groupStart__7b93c {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] .groupStart__56db5:before {
+ol[data-list-id="chat-messages"] .groupStart__7b93c:before {
 	display: block;
 	content: "";
 	
@@ -113,31 +94,31 @@ ol[data-list-id="chat-messages"] .groupStart__56db5:before {
 
 /* discord CSS antipattern `messageListItem` containers prevent selecting
 and removing double borders without JS or CSS4's :has */
-/** .divider-2rZFJK + li:has(> .groupStart__56db5) {
+/** .divider-2rZFJK + li:has(> .groupStart__7b93c) {
 	border-top: none;
 } */
 /** end line separators */
 
 /** mentions apply only to the message content, not its container */
-.mentioned-Tre-dv {
+.mentioned_fa6fd2 {
 	background: none;
 }
 
-.mentioned-Tre-dv > *:first-child {
+.mentioned_fa6fd2 > *:first-child {
 	background-color: var(--background-mentioned);
 }
 /** end mentions */
 
 /* restore the old unread message in-line indicator */
-.isUnread__6f880 {
+.isUnread_de09f5 {
 	margin: 20px 15px !important;
 }
 
-.isUnread__6f880 svg {
+.isUnread_de09f5 svg {
 	display: none;
 }
 
-.isUnread__6f880:after {
+.isUnread_de09f5:after {
 	color: #f04747;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -148,7 +129,7 @@ and removing double borders without JS or CSS4's :has */
 	font-size: 0.93em;
 }
 
-.isUnread__6f880 > .unreadPill__715fc {
+.isUnread_de09f5 > span {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -156,7 +137,7 @@ and removing double borders without JS or CSS4's :has */
 	color: transparent;
 }
 
-.isUnread__6f880 > .unreadPill__715fc:after {
+.isUnread_de09f5 > .unreadPill__715fc:after {
 	border-bottom: 1px solid rgba(240,71,71,.7);
 }
 /** end unread */
@@ -200,35 +181,4 @@ div[aria-label="Message Actions"] div[aria-label="Create Thread"] {
 /** rotate "more" button */
 div[aria-label="Message Actions"] div[aria-label="More"] {
 	transform: rotate(90deg);
-}
-
-/* tip in the upload dropdown... */
-#channel-attach-upload-file .tipSubtext-qn0l_- {
-	display: none;
-}
-
-/** notification/mention icon: DMs and channels */
-.lowerBadge__669e7, .mentionsBadge-3H1BKJ {
-	background-color: #f04747 !important;
-	border: 2px solid transparent;
-	border-radius: 3px;
-	box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
-	width: 16px;
-	border-top: 1px solid #f26262;
-	height: 18px;
-}
-
-/** remove notification icon mask */
-use[href="#a0d0abd5-c512-40bb-8dae-ec66f08c797a-lower_badge_masks"] {
-	display: none;
-}
-
-/** hide mouseover timestamps */
-ol[data-list-id="chat-messages"] div[aria-roledescription="Message"]:not(.groupStart__56db5) time {
-	display: none;
-}
-
-/** remove create thread button in bottom left text entry pupup */
-#channel-attach-THREAD, #channel-attach-upload-text-as-file {
-	display: none;
 }
