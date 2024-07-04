@@ -110,15 +110,15 @@ and removing double borders without JS or CSS4's :has */
 /** end mentions */
 
 /* restore the old unread message in-line indicator */
-.isUnread_de09f5 {
+.isUnread_c2654d {
 	margin: 20px 15px !important;
 }
 
-.isUnread_de09f5 svg {
+.isUnread_c2654d svg {
 	display: none;
 }
 
-.isUnread_de09f5:after {
+.isUnread_c2654d:after {
 	color: #f04747;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -129,7 +129,7 @@ and removing double borders without JS or CSS4's :has */
 	font-size: 0.93em;
 }
 
-.isUnread_de09f5 > span {
+.isUnread_c2654d > span {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -137,7 +137,7 @@ and removing double borders without JS or CSS4's :has */
 	color: transparent;
 }
 
-.isUnread_de09f5 > .unreadPill__715fc:after {
+.isUnread_c2654d > .unreadPill_c2654d:after {
 	border-bottom: 1px solid rgba(240,71,71,.7);
 }
 /** end unread */
