@@ -72,11 +72,11 @@ div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
 
 
 /** restore line separators between messages */
-ol[data-list-id="chat-messages"] .groupStart__7b93c {
+ol[data-list-id="chat-messages"] .groupStart_d5deea {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] .groupStart__7b93c:before {
+ol[data-list-id="chat-messages"] .groupStart_d5deea:before {
 	display: block;
 	content: "";
 	
@@ -94,7 +94,7 @@ ol[data-list-id="chat-messages"] .groupStart__7b93c:before {
 
 /* discord CSS antipattern `messageListItem` containers prevent selecting
 and removing double borders without JS or CSS4's :has */
-/** .divider-2rZFJK + li:has(> .groupStart__7b93c) {
+/** .divider-2rZFJK + li:has(> .groupStart_d5deea) {
 	border-top: none;
 } */
 /** end line separators */
