@@ -18,20 +18,20 @@ textarea::placeholder {
 }
 
 /* bottom left name is distracting */
-.title__4a7a9 {
+.title_d1da5f {
 	font-weight: 500;
 }
 
 /* icons in the send message textbox */
-.buttons__7ecff button[aria-label="Send a gift"],
-.buttons__7ecff button[aria-label="Open GIF picker"]  {display: none;}
+div[class^="buttons_"] button[aria-label="Send a gift"],
+div[class^="buttons_"] button[aria-label="Open GIF picker"]  {display: none;}
 
 /* they made the buttons in the send message textbox bright for some reason... */
-.channelTextArea__648e5 button {
+div[class^="channelBottomBarArea"] button {
 	opacity: .3;
 }
 
-.channelTextArea__648e5 button:hover {
+div[class^="channelBottomBarArea"] button:hover {
 	opacity: 1.0;
 }
 
