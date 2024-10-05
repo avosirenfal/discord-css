@@ -156,11 +156,11 @@ and removing double borders without JS or CSS4's :has */
 
 
 /* floating message popup */
-div[aria-label="Message Actions"] div[class^="reactionSuggestion_"] {
+div[aria-label="Message Actions"] div[aria-label^="Click to react"] {
 	display: none;
 }
 
-div[aria-label="Message Actions"] div[class^="reactionSuggestion_"] + div[class^="separator_"] {
+div[aria-label="Message Actions"] div[aria-label^="Click to react"] + div[class^="separator_"] {
 	display: none;
 }
 
@@ -185,6 +185,10 @@ div[aria-label="Message Actions"] div[role="button"][class^="selected-"] {
 
 /** remove create thread and reply buttons */
 div[aria-label="Message Actions"] div[aria-label="Create Thread"] {
+	display: none;
+}
+
+div[aria-label="Message Actions"] div[aria-label="Forward"] {
 	display: none;
 }
 
