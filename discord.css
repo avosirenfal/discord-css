@@ -49,8 +49,8 @@ a[href="//discord.com/snowsgiving"] {
 }
 
 /* hide server discovery */
-div[aria-label="Explore Discoverable Servers"] {
-	display: none;
+div[aria-label="Discover"] {
+	opacity: 0;
 }
 
 /* server add icon color */
