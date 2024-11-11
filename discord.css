@@ -160,6 +160,10 @@ div[aria-label="Message Actions"] div[aria-label^="Click to react"] {
 	display: none;
 }
 
+div[aria-label="Message Actions"] div[aria-label^="Click to remove"] {
+	display: none;
+}
+
 div[aria-label="Message Actions"] div[aria-label^="Click to react"] + div[class^="separator_"] {
 	display: none;
 }
