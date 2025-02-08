@@ -97,6 +97,12 @@ and removing double borders without JS or CSS4's :has */
 /** .divider-2rZFJK + li:has(> .groupStart_d5deea) {
 	border-top: none;
 } */
+
+/* when NEW MESSAGES or searching prevent two lines from being back to back */
+div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_"]:first-child {
+	border-top: none !important;
+	padding-top: 5px;
+}
 /** end line separators */
 
 /** mentions apply only to the message content, not its container */
@@ -206,4 +212,9 @@ div[aria-label="Message Actions"] div[aria-label="More"] {
 	border-radius: 4px;
 	width: 18px !important;
 	height: 18px !important;
+}
+
+/* hide stupid gradient in the left server bar */
+div[class^="footer_"] div[class^="gradient_"] {
+	display: none;
 }
