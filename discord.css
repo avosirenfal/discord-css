@@ -2,7 +2,7 @@ textarea::placeholder {
 	color: #72767d; /* hsla(0,0%,100%,.7) !important; */
 }
 
-* {
+body > div#app > div > *, body div#app-mount *, .visual-refresh.theme-dark, .visual-refresh .theme-dark {
 	/* make usernames slightly less intense white */
 	--header-primary: #ececec !important;
 	/* remove mouseover highlight color on messages */
@@ -15,6 +15,7 @@ textarea::placeholder {
 	--channeltextarea-background: #40444b;
 	--background-secondary: #2f3136;
 	--background-secondary-alt: #292b2f;
+	--text-link: #00aafc;
 }
 
 /* bottom left name is distracting */
@@ -72,11 +73,11 @@ div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
 
 
 /** restore line separators between messages */
-ol[data-list-id="chat-messages"] .groupStart_d5deea {
+ol[data-list-id="chat-messages"] div[class*="groupStart_"] {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] .groupStart_d5deea:before {
+ol[data-list-id="chat-messages"] div[class*="groupStart_"]:before {
 	display: block;
 	content: "";
 	
@@ -94,7 +95,7 @@ ol[data-list-id="chat-messages"] .groupStart_d5deea:before {
 
 /* discord CSS antipattern `messageListItem` containers prevent selecting
 and removing double borders without JS or CSS4's :has */
-/** .divider-2rZFJK + li:has(> .groupStart_d5deea) {
+/** .divider-2rZFJK + li:has(> div[class*="groupStart_"]) {
 	border-top: none;
 } */
 
@@ -116,15 +117,15 @@ div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_
 /** end mentions */
 
 /* restore the old unread message in-line indicator */
-.isUnread_c2654d {
+div[class*="isUnread_"] {
 	margin: 20px 15px !important;
 }
 
-.isUnread_c2654d svg {
+div[class*="isUnread_"] svg {
 	display: none;
 }
 
-.isUnread_c2654d:after {
+div[class*="isUnread_"]:after {
 	color: #f04747;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -135,7 +136,7 @@ div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_
 	font-size: 0.93em;
 }
 
-.isUnread_c2654d > span {
+div[class*="isUnread_"] > span {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -143,7 +144,7 @@ div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_
 	color: transparent;
 }
 
-.isUnread_c2654d > .unreadPill_c2654d:after {
+div[class*="isUnread_"] > .unreadPill_c2654d:after {
 	border-bottom: 1px solid rgba(240,71,71,.7);
 }
 /** end unread */
@@ -217,4 +218,118 @@ div[aria-label="Message Actions"] div[aria-label="More"] {
 /* hide stupid gradient in the left server bar */
 div[class^="footer_"] div[class^="gradient_"] {
 	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* change the chat background and chat header back */
+main[class*="chatContent_"], section[class*="themed__"] {
+	background: #36393f !important;
+}
+
+/* change the searchbar background back */
+div[class*="searchBar_"] {
+	background: #1e1f22 !important;
+}
+
+/* remove left drop shadow on the chat title area of the channel header */
+section[aria-label="Channel header"] div[class*="children__"]:after {
+	display: none;
+}
+
+/* revert the color of the primary chat input at the bottom */
+div[class*="channelTextArea_"], div[class*="channelTextArea_"] div[class*="themedBackground_"] {
+	background: #40444b;
+}
+
+/* rext primary chat input height changes */
+div[class*="channelTextArea_"] div[class*="scrollableContainer_"] {
+	--custom-channel-textarea-text-area-height: 44px;
+}
+
+/* fix sidebar color */
+nav[aria-label="Private channels"] div[class*="scroller_"] {
+	background: #2f3136 !important;
+}
+
+/* fix bottom left bg color and rounded corners */
+section[aria-label="User area"] {
+	border-radius: 0 !important;
+	background: #292b2f !important;
+}
+
+/* fix left side guild list background color */
+ul[data-list-id="guildsnav"] {
+	background: #1e1f22;
+}
+
+/* hide app launcher button in the bottom right of the primary chat input */
+div[class*="channelAppLauncher_"] {
+	display: none;
+}
+
+/* revert the bottom padding at the end of the chat list being too small */
+ol[data-list-id="chat-messages"] div[class*="scrollerSpacer_"] {
+	height: 30px;
+}
+
+/* fix right click menu bg and text color */
+div[class*="menu_"] {
+	background: #111214;
+}
+
+div[class*="menu_"] div[class*="label_"] {
+	color: #b0b4bb !important;
+}
+
+/* fix emoji highlight */
+div[class*="reaction_"] {
+	background: hsla(var(--brand-500-hsl)/0.15) !important;
+	border: 1px solid hsl(var(--brand-500-hsl)/1) !important;
+}
+
+/* fix inline add emoji button next to emojis on messages */
+div[class*="forceShow_"] {
+	background: #2f3136 !important;
+}
+
+/* fix embed color */
+article[class*="embedFull_"] {
+	background: #2f3136 !important;
+}
+
+/* fix reply color */
+div[class*="replyBar_"] {
+	background: #2f3136 !important;
+}
+
+/* remove top border from reply popover */
+div[class*="stackedBars_"] {
+	background: transparent !important;
+}
+
+/* fix reply text color */
+div[class*="replyLabel_"] {
+    color: #b5bab8 !important;
+}
+
+/* message separators with text (dates, new message) shouldn't have a background color */
+.visual-refresh span[class*="content_"] {
+	background: transparent;
+}
+
+/* server sidebar color */
+.visual-refresh nav[class*="container_"] {
+	background: #2f3136 !important;
 }
