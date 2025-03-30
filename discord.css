@@ -77,7 +77,7 @@ ol[data-list-id="chat-messages"] div[class*="groupStart_"] {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] div[class*="groupStart_"]:before {
+ol[data-list-id="chat-messages"] div[class*="groupStart_"]:not([class*="flash_"]):before {
 	display: block;
 	content: "";
 	
@@ -107,13 +107,15 @@ div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_
 /** end line separators */
 
 /** mentions apply only to the message content, not its container */
-.mentioned_fa6fd2 {
-	background: none;
+div[class*="mentioned_"] {
+	background: none !important;
 }
 
-.mentioned_fa6fd2 > *:first-child {
+/*
+div[class*="mentioned_"] > *:first-child {
 	background-color: var(--background-mentioned);
 }
+*/
 /** end mentions */
 
 /* restore the old unread message in-line indicator */
@@ -295,8 +297,11 @@ div[class*="menu_"] div[class*="label_"] {
 
 /* fix emoji highlight */
 div[class*="reaction_"] {
+	background: #2f3136 !important;
+}
+
+div[class*="reactionMe_"] {
 	background: hsla(var(--brand-500-hsl)/0.15) !important;
-	border: 1px solid hsl(var(--brand-500-hsl)/1) !important;
 }
 
 /* fix inline add emoji button next to emojis on messages */
@@ -332,4 +337,42 @@ div[class*="replyLabel_"] {
 /* server sidebar color */
 .visual-refresh nav[class*="container_"] {
 	background: #2f3136 !important;
+}
+
+/* fix spoiler color */
+span[class*="spoilerMarkdownContent_"] {
+	background-color: #1e1f22;
+}
+
+/* fix find/start conversation button */
+nav[aria-label="Private channels"] div[class*="searchBar_"] {
+	background: #2f3136 !important;
+}
+
+nav[aria-label="Private channels"] div[class*="searchBar_"] button {
+	background: #1e1f22 !important;
+	color: #72767d;
+	border-radius: 4px;
+	padding: 0 0 0 1ch;
+	display: block;
+	text-align: left;
+}
+
+/* fix server folder colors */
+div[class*="folderIconWrapper_"] {
+	background: #3f4581 !important;
+}
+
+/* reply color in chat */
+div[class*="repliedTextPreview_"] {
+	color: #b1bac1 !important;
+}
+
+div[class*="repliedTextPreview_"]:hover {
+	color: #c4c5c5 !important;
+}
+
+/* remove spoiler border */
+div[class*="spoilerContainer_"][class*="hidden_"] article {
+	border: none;
 }
