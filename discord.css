@@ -291,9 +291,18 @@ div[class*="menu_"] {
 	background: #111214;
 }
 
-div[class*="menu_"] div[class*="label_"] {
+div[class*="labelContainer_"]:not([class*="colorDanger_"]) div[class*="label_"] {
 	color: #b0b4bb !important;
 }
+
+div[class*="labelContainer_"][class*="focused_"]:not([class*="colorDanger_"]) div[class*="label_"] {
+    color: #fff !important;
+}
+
+div[class*="focused_"][class*="colorDanger_"] {
+    background: #592525 !important;
+}
+/** end right click menu */
 
 /* fix emoji highlight */
 div[class*="reaction_"] {
@@ -360,7 +369,11 @@ nav[aria-label="Private channels"] div[class*="searchBar_"] button {
 
 /* fix server folder colors */
 div[class*="folderIconWrapper_"] {
-	background: #3f4581 !important;
+	--bg-mod-subtle: #3f4581;
+}
+
+span[class*="expandedFolderBackground_"] {
+	background: #2f3136 !important;
 }
 
 /* reply color in chat */
