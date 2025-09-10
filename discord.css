@@ -24,15 +24,15 @@ body > div#app > div > *, body div#app-mount *, .visual-refresh.theme-dark, .vis
 }
 
 /* icons in the send message textbox */
-div[class^="buttons_"] button[aria-label="Send a gift"],
-div[class^="buttons_"] button[aria-label="Open GIF picker"]  {display: none;}
+div[class^="buttons_"] div[role="button"][aria-label="Send a gift"],
+div[class^="buttons_"] div[role="button"][aria-label="Open GIF picker"]  {display: none;}
 
 /* they made the buttons in the send message textbox bright for some reason... */
-div[class^="channelBottomBarArea"] button {
+div[class^="channelBottomBarArea"] div[class*="button__"] {
 	opacity: .3;
 }
 
-div[class^="channelBottomBarArea"] button:hover {
+div[class^="channelBottomBarArea"] div[class*="button__"]:hover {
 	opacity: 1.0;
 }
 
@@ -255,9 +255,22 @@ div[class*="channelTextArea_"], div[class*="channelTextArea_"] div[class*="theme
 	background: #40444b;
 }
 
-/* rext primary chat input height changes */
+div[class*="channelTextArea_"] {
+	--custom-chat-input-margin-bottom: 20px;
+}
+
+/* revert primary chat input height changes */
 div[class*="channelTextArea_"] div[class*="scrollableContainer_"] {
 	--custom-channel-textarea-text-area-height: 44px;
+}
+
+div[class*="channelTextArea_"] div[class*="scrollableContainer_"] div[class*="attachWrapper_"] {
+	padding: var(--space-6) calc(var(--space-md) - 6px);
+	
+}
+
+.align-chat-input form[class*="form_"] {
+	margin-top: 0;
 }
 
 /* fix sidebar color */
@@ -368,11 +381,11 @@ nav[aria-label="Private channels"] div[class*="searchBar_"] button {
 }
 
 /* fix server folder colors */
-div[class*="folderIconWrapper_"] {
-	--bg-mod-subtle: #3f4581;
+div[class*="folderPreviewWrapper_"] {
+	--background-mod-subtle: #3f4581;
 }
 
-span[class*="expandedFolderBackground_"] {
+span[class*="folderGroupBackground_"] {
 	background: #2f3136 !important;
 }
 
@@ -388,4 +401,9 @@ div[class*="repliedTextPreview_"]:hover {
 /* remove spoiler border */
 div[class*="spoilerContainer_"][class*="hidden_"] article {
 	border: none;
+}
+
+/* fix autocomplete color */
+div[class*="autocomplete_"] {
+	background: #32353b;
 }
