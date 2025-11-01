@@ -9,7 +9,7 @@ body > div#app > div > *, body div#app-mount *, .visual-refresh.theme-dark, .vis
 	--background-message-hover: transparent !important;
 	/* make muted text actually muted... */
 	--text-muted: #72767d !important;
-	// font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	/* font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
 	/* revert background color changes */
 	--background-primary: #36393f;
 	--channeltextarea-background: #40444b;
@@ -41,6 +41,9 @@ a[href="/store"] {
 	display: none;
 }
 a[href="/shop"] {
+	display: none;
+}
+a[href="/quest-home"] {
 	display: none;
 }
 
@@ -269,8 +272,9 @@ div[class*="channelTextArea_"] div[class*="scrollableContainer_"] div[class*="at
 	
 }
 
-.align-chat-input form[class*="form_"] {
-	margin-top: 0;
+/* increase the padding between the last message in the message list and the chat input */
+ol[data-list-id="chat-messages"] {
+	padding-bottom: 10px;
 }
 
 /* fix sidebar color */
@@ -406,4 +410,11 @@ div[class*="spoilerContainer_"][class*="hidden_"] article {
 /* fix autocomplete color */
 div[class*="autocomplete_"] {
 	background: #32353b;
+}
+
+/* absolutely not, no. gets rid of custom username fonts and colors */
+span[data-username-with-effects] {
+	font-family: 'gg sans' !important;
+	letter-spacing: normal !important;
+	-webkit-text-fill-color: currentColor !important;
 }
