@@ -8,7 +8,7 @@ body > div#app > div > *, body div#app-mount *, .visual-refresh.theme-dark, .vis
 	/* remove mouseover highlight color on messages */
 	--background-message-hover: transparent !important;
 	/* make muted text actually muted... */
-	--text-muted: #72767d !important;
+	/* --text-muted: #72767d !important; */
 	/* font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
 	/* revert background color changes */
 	--background-primary: #36393f;
@@ -176,11 +176,11 @@ div[aria-label="Message Actions"] div[aria-label^="Click to remove"] {
 	display: none;
 }
 
-div[aria-label="Message Actions"] div[aria-label^="Click to react"] + div[class^="separator_"] {
+div[aria-label="Message Actions"] div[class^="separator_"] {
 	display: none;
 }
 
-div[aria-label="Message Actions"] > div {
+div[aria-label="Message Actions"] > div, div[aria-label="Message Actions"] > div:hover {
 	margin-top: 25px;
 	border: none !important;
 	background: transparent !important;
@@ -189,14 +189,14 @@ div[aria-label="Message Actions"] > div {
 
 /** subdue message popup colors */
 div[aria-label="Message Actions"] div[role="button"] {
-	color: #4a4d53;
+	color: #5a5d63;
+	background: none !important;
 }
 
 /** add hover color to message action buttons */
 div[aria-label="Message Actions"] div[role="button"]:hover,
-div[aria-label="Message Actions"] div[role="button"][class^="selected-"] {
-	color: var(--interactive-hover) !important;
-	background: none;
+div[aria-label="Message Actions"] div[role="button"][aria-expanded="true"] {
+	color: #eeeeee !important;
 }
 
 /** remove create thread and reply buttons */
@@ -211,13 +211,6 @@ div[aria-label="Message Actions"] div[aria-label="Forward"] {
 /** rotate "more" button */
 div[aria-label="Message Actions"] div[aria-label="More"] {
 	transform: rotate(90deg);
-}
-
-/* make notification icons square */
-.numberBadge_df8943 {
-	border-radius: 4px;
-	width: 18px !important;
-	height: 18px !important;
 }
 
 /* hide stupid gradient in the left server bar */
