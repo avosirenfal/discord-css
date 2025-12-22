@@ -76,11 +76,11 @@ div[aria-label^="Buy Boosts to help unlock the Groups plan!"] {
 
 
 /** restore line separators between messages */
-ol[data-list-id="chat-messages"] div[class*="groupStart_"] {
+ol[data-list-id="chat-messages"] div[class*="-groupStart"] {
 	border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-ol[data-list-id="chat-messages"] div[class*="groupStart_"]:not([class*="flash_"]):before {
+ol[data-list-id="chat-messages"] div[class*="-groupStart"]:not([class*="-flash"]):before {
 	display: block;
 	content: "";
 	
@@ -98,39 +98,39 @@ ol[data-list-id="chat-messages"] div[class*="groupStart_"]:not([class*="flash_"]
 
 /* discord CSS antipattern `messageListItem` containers prevent selecting
 and removing double borders without JS or CSS4's :has */
-/** .divider-2rZFJK + li:has(> div[class*="groupStart_"]) {
+/** .divider-2rZFJK + li:has(> div[class*="-groupStart"]) {
 	border-top: none;
 } */
 
 /* when NEW MESSAGES or searching prevent two lines from being back to back */
-div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="groupStart_"]:first-child {
+div[class^="divider_"] + li[class^="messageListItem_"] > div[class*="-groupStart"]:first-child {
 	border-top: none !important;
 	padding-top: 5px;
 }
 /** end line separators */
 
 /** mentions apply only to the message content, not its container */
-div[class*="mentioned_"] {
+div[class*="-mentioned"] {
 	background: none !important;
 }
 
 /*
-div[class*="mentioned_"] > *:first-child {
+div[class*="-mentioned"] > *:first-child {
 	background-color: var(--background-mentioned);
 }
 */
 /** end mentions */
 
 /* restore the old unread message in-line indicator */
-div[class*="isUnread_"] {
+div[class*="-isUnread"] {
 	margin: 20px 15px !important;
 }
 
-div[class*="isUnread_"] svg {
+div[class*="-isUnread"] svg {
 	display: none;
 }
 
-div[class*="isUnread_"]:after {
+div[class*="-isUnread"]:after {
 	color: #f04747;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -141,7 +141,7 @@ div[class*="isUnread_"]:after {
 	font-size: 0.93em;
 }
 
-div[class*="isUnread_"] > span {
+div[class*="-isUnread"] > span {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -149,7 +149,7 @@ div[class*="isUnread_"] > span {
 	color: transparent;
 }
 
-div[class*="isUnread_"] > .unreadPill_c2654d:after {
+div[class*="-isUnread"] > .unreadPill_c2654d:after {
 	border-bottom: 1px solid rgba(240,71,71,.7);
 }
 /** end unread */
@@ -232,12 +232,12 @@ div[class^="footer_"] div[class^="gradient_"] {
 
 
 /* change the chat background and chat header back */
-main[class*="chatContent_"], section[class*="themed__"] {
+main[class*="-chatContent"], section[class*="themed__"] {
 	background: #36393f !important;
 }
 
 /* change the searchbar background back */
-div[class*="searchBar_"] {
+div[class*="-searchBar"] {
 	background: #1e1f22 !important;
 }
 
@@ -247,20 +247,20 @@ section[aria-label="Channel header"] div[class*="children__"]:after {
 }
 
 /* revert the color of the primary chat input at the bottom */
-div[class*="channelTextArea_"], div[class*="channelTextArea_"] div[class*="themedBackground_"] {
+div[class*="-channelTextArea"], div[class*="-channelTextArea"] div[class*="-themedBackground"] {
 	background: #40444b;
 }
 
-div[class*="channelTextArea_"] {
+div[class*="-channelTextArea"] {
 	--custom-chat-input-margin-bottom: 20px;
 }
 
 /* revert primary chat input height changes */
-div[class*="channelTextArea_"] div[class*="scrollableContainer_"] {
+div[class*="-channelTextArea"] div[class*="-scrollableContainer"] {
 	--custom-channel-textarea-text-area-height: 44px;
 }
 
-div[class*="channelTextArea_"] div[class*="scrollableContainer_"] div[class*="attachWrapper_"] {
+div[class*="-channelTextArea"] div[class*="-scrollableContainer"] div[class*="-attachWrapper"] {
 	padding: var(--space-6) calc(var(--space-md) - 6px);
 	
 }
@@ -271,7 +271,7 @@ ol[data-list-id="chat-messages"] {
 }
 
 /* fix sidebar color */
-nav[aria-label="Private channels"] div[class*="scroller_"] {
+nav[aria-label="Private channels"] div[class*="-scroller"] {
 	background: #2f3136 !important;
 }
 
@@ -287,88 +287,88 @@ ul[data-list-id="guildsnav"] {
 }
 
 /* hide app launcher button in the bottom right of the primary chat input */
-div[class*="channelAppLauncher_"] {
+div[class*="-channelAppLauncher"] {
 	display: none;
 }
 
 /* revert the bottom padding at the end of the chat list being too small */
-ol[data-list-id="chat-messages"] div[class*="scrollerSpacer_"] {
+ol[data-list-id="chat-messages"] div[class*="-scrollerSpacer"] {
 	height: 30px;
 }
 
 /* fix right click menu bg and text color */
-div[class*="menu_"] {
+div[class*="-menu"] {
 	background: #111214;
 }
 
-div[class*="labelContainer_"]:not([class*="colorDanger_"]) div[class*="label_"] {
+div[class*="-labelContainer"]:not([class*="-colorDanger"]) div[class*="-label"] {
 	color: #b0b4bb !important;
 }
 
-div[class*="labelContainer_"][class*="focused_"]:not([class*="colorDanger_"]) div[class*="label_"] {
+div[class*="-labelContainer"][class*="-focused"]:not([class*="-colorDanger"]) div[class*="-label"] {
     color: #fff !important;
 }
 
-div[class*="focused_"][class*="colorDanger_"] {
+div[class*="-focused"][class*="-colorDanger"] {
     background: #592525 !important;
 }
 /** end right click menu */
 
 /* fix emoji highlight */
-div[class*="reaction_"] {
+div[class*="-reaction"] {
 	background: #2f3136 !important;
 }
 
-div[class*="reactionMe_"] {
+div[class*="-reactionMe"] {
 	background: hsla(var(--brand-500-hsl)/0.15) !important;
 }
 
 /* fix inline add emoji button next to emojis on messages */
-div[class*="forceShow_"] {
+div[class*="-forceShow"] {
 	background: #2f3136 !important;
 }
 
 /* fix embed color */
-article[class*="embedFull_"] {
+article[class*="-embedFull"] {
 	background: #2f3136 !important;
 }
 
 /* fix reply color */
-div[class*="replyBar_"] {
+div[class*="-replyBar"] {
 	background: #2f3136 !important;
 }
 
 /* remove top border from reply popover */
-div[class*="stackedBars_"] {
+div[class*="-stackedBars"] {
 	background: transparent !important;
 }
 
 /* fix reply text color */
-div[class*="replyLabel_"] {
+div[class*="-replyLabel"] {
     color: #b5bab8 !important;
 }
 
 /* message separators with text (dates, new message) shouldn't have a background color */
-.visual-refresh span[class*="content_"] {
+.visual-refresh span[class*="-content"] {
 	background: transparent;
 }
 
 /* server sidebar color */
-.visual-refresh nav[class*="container_"] {
+.visual-refresh nav[class*="-container"] {
 	background: #2f3136 !important;
 }
 
 /* fix spoiler color */
-span[class*="spoilerMarkdownContent_"] {
+span[class*="-spoilerMarkdownContent"] {
 	background-color: #1e1f22;
 }
 
 /* fix find/start conversation button */
-nav[aria-label="Private channels"] div[class*="searchBar_"] {
+nav[aria-label="Private channels"] div[class*="-searchBar"] {
 	background: #2f3136 !important;
 }
 
-nav[aria-label="Private channels"] div[class*="searchBar_"] button {
+nav[aria-label="Private channels"] div[class*="-searchBar"] button {
 	background: #1e1f22 !important;
 	color: #72767d;
 	border-radius: 4px;
@@ -378,30 +378,30 @@ nav[aria-label="Private channels"] div[class*="searchBar_"] button {
 }
 
 /* fix server folder colors */
-div[class*="folderPreviewWrapper_"] {
+div[class*="-folderPreviewWrapper"] {
 	--background-mod-subtle: #3f4581;
 }
 
-span[class*="folderGroupBackground_"] {
+span[class*="-folderGroupBackground"] {
 	background: #2f3136 !important;
 }
 
 /* reply color in chat */
-div[class*="repliedTextPreview_"] {
+div[class*="-repliedTextPreview"] {
 	color: #b1bac1 !important;
 }
 
-div[class*="repliedTextPreview_"]:hover {
+div[class*="-repliedTextPreview"]:hover {
 	color: #c4c5c5 !important;
 }
 
 /* remove spoiler border */
-div[class*="spoilerContainer_"][class*="hidden_"] article {
+div[class*="-spoilerContainer"][class*="-hidden"] article {
 	border: none;
 }
 
 /* fix autocomplete color */
-div[class*="autocomplete_"] {
+div[class*="-autocomplete"] {
 	background: #32353b;
 }
 
