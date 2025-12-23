@@ -24,15 +24,15 @@ body > div#app > div > *, body div#app-mount *, .visual-refresh.theme-dark, .vis
 }
 
 /* icons in the send message textbox */
-div[class^="buttons_"] div[role="button"][aria-label="Send a gift"],
-div[class^="buttons_"] div[role="button"][aria-label="Open GIF picker"]  {display: none;}
+div[class*="-buttons"] div[role="button"][aria-label="Send a gift"],
+div[class*="-buttons"] div[role="button"][aria-label="Open GIF picker"]  {display: none;}
 
 /* they made the buttons in the send message textbox bright for some reason... */
-div[class^="channelBottomBarArea"] div[class*="button__"] {
-	opacity: .3;
+div[class*="channelBottomBarArea"] div[class*="-button"] {
+	opacity: .6;
 }
 
-div[class^="channelBottomBarArea"] div[class*="button__"]:hover {
+div[class*="channelBottomBarArea"] div[class*="-button"]:hover {
 	opacity: 1.0;
 }
 
@@ -315,11 +315,11 @@ div[class*="-focused"][class*="-colorDanger"] {
 /** end right click menu */
 
 /* fix emoji highlight */
-div[class*="-reaction"] {
+div[class$="-reaction"] {
 	background: #2f3136 !important;
 }
 
-div[class*="-reactionMe"] {
+div[class$="-reactionMe"] {
 	background: hsla(var(--brand-500-hsl)/0.15) !important;
 }
 
