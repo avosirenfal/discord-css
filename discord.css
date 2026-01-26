@@ -247,7 +247,7 @@ main[class*="chatContent_"], section[class*="themed_"] {
 }
 
 /* change the searchbar background back */
-div[class*="searchBar__"] {
+div[class*="searchBar_"] {
 	background: #1e1f22 !important;
 }
 
