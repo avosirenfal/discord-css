@@ -307,29 +307,29 @@ ol[data-list-id="chat-messages"] div[class*="scrollerSpacer__"] {
 }
 
 /* fix right click menu bg and text color */
-div[class*="menu__"] {
+div[class*="menu_"] {
 	background: #111214;
 }
 
-div[class*="labelContainer__"]:not([class*="colorDanger__"]) div[class*="label__"] {
+div[class*="labelContainer__"]:not([class*="colorDanger__"]) div[class*="label_"] {
 	color: #b0b4bb !important;
 }
 
-div[class*="labelContainer__"][class*="focused__"]:not([class*="colorDanger__"]) div[class*="label__"] {
+div[class*="labelContainer__"][class*="focused__"]:not([class*="colorDanger_"]) div[class*="label_"] {
     color: #fff !important;
 }
 
-div[class*="focused__"][class*="colorDanger__"] {
+div[class*="focused_"][class*="colorDanger_"] {
     background: #592525 !important;
 }
 /** end right click menu */
 
 /* fix emoji highlight */
-div[class$="-reaction"] {
+div[class*="reaction_"] {
 	background: #2f3136 !important;
 }
 
-div[class$="-reactionMe"] {
+div[class*="reactionMe_"] {
 	background: hsla(var(--brand-500-hsl)/0.15) !important;
 }
 
@@ -359,12 +359,12 @@ div[class*="replyLabel__"] {
 }
 
 /* message separators with text (dates, new message) shouldn't have a background color */
-.visual-refresh span[class*="content__"] {
+.visual-refresh span[class*="content_"] {
 	background: transparent;
 }
 
 /* server sidebar color */
-.visual-refresh nav[class*="container__"] {
+.visual-refresh nav[class*="container_"] {
 	background: #2f3136 !important;
 }
 
@@ -374,11 +374,11 @@ span[class*="spoilerMarkdownContent__"] {
 }
 
 /* fix find/start conversation button */
-nav[aria-label="Private channels"] div[class*="searchBar__"] {
+nav[aria-label="Private channels"] div[class*="searchBar_"] {
 	background: #2f3136 !important;
 }
 
-nav[aria-label="Private channels"] div[class*="searchBar__"] button {
+nav[aria-label="Private channels"] div[class*="searchBar_"] button {
 	background: #1e1f22 !important;
 	color: #72767d;
 	border-radius: 4px;
