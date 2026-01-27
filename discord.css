@@ -311,7 +311,7 @@ div[class*="menu_"] {
 	background: #111214;
 }
 
-div[class*="labelContainer__"]:not([class*="colorDanger__"]) div[class*="label_"] {
+div[class*="labelContainer_"]:not([class*="colorDanger_"]) div[class*="label_"] {
 	color: #b0b4bb !important;
 }
 
