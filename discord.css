@@ -421,3 +421,8 @@ span[data-username-with-effects] {
 	letter-spacing: normal !important;
 	-webkit-text-fill-color: currentColor !important;
 }
+
+/* hides the quest ad in the bottom left */
+div[data-testid="quest-bar-container"] {
+	display: none;
+}
